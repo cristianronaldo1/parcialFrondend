@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="nav-item"> <img src="/imagenes/casa.png" alt="Home"> </div>
+        <div class="nav-item"> <a href="/paginas/explorar.html">  <img src="/imagenes/explorar.png" alt="Explorar">  </a></div>
+        <div class="nav-item"> <a href="/paginas/crear.html">  <img src="/imagenes/anadir.png" alt="Crear">  </a> </div>
+        <div class="nav-item" id="notifications"><a href="/paginas/actualizaciones.html">  <img src="/imagenes/campana.png" alt="Actualizaciones">  </a></div>
+        <div class="nav-item" id="messages"> <a href="/paginas/mensajes.html">  <img src="/imagenes/mensajero.png" alt="Mensajes">  </a> </div>
+    </div>
+    <div class="up-bar">
+        <div class="search-bar">
+        
+            <input type="text" placeholder="Buscar">
+            
+        </div>
+        <div class="cuenta">
+            <span class="letra">A</span>
+          </div>
+    </div>
+    
+    <div class="container" >
+        <img class="imagen"  src="https://i.pinimg.com/564x/cc/38/be/cc38bea22c3a985206125f18ac6f2610.jpg" alt="1" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/control/564x/22/cf/8a/22cf8a16dc086bb5ebbc6870a58ce434.jpg" alt="2" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/564x/91/d0/f4/91d0f4e0e49c69f3e9c9c37f53dc5cdd.jpg" alt="3" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/736x/9c/7f/9f/9c7f9f218ce531019d56299cc4c93f16.jpg" alt="4" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/control/564x/13/6d/6c/136d6ccd076b46d86a2dfcb30a04b6a5.jpg" alt="5" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/control/564x/62/1c/45/621c45bff039f473e4ae3a2a855ebd9d.jpg" alt="6" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/control/564x/49/77/bf/4977bf74187caf636defde266cb48530.jpg" alt="7" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/736x/c5/81/74/c5817403c1706eb4ca0334e9254fc044.jpg" alt="8" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/736x/e3/32/48/e33248b33613a97bddb8172ba334374c.jpg" alt="9" width="230px" height="">
+        <img class="imagen"  src="https://i.pinimg.com/736x/47/44/bc/4744bc270497dc27b7b7fd5acea9d056.jpg" alt="10" width="230px" height="">
+
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+    <script>
+        var elem = document.querySelector('container');
+        imagesloaded(elem, () =>{
+            var msnry = new Masonry( elem, {
+        // options
+        itemSelector: 'imagen',
+        columnWidth: 230,
+            });
+        });
+    </script>
+
+</body>
+</html>

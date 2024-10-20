@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 71px;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+.nav-item img {
+    width: 24px;
+    height: 24px;
+}
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 8px; /* Aumentar estos valores hace que el cuadrado sea más pequeño */
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background-color: rgba(200, 200, 200, 0.5); /* Color de gis semitransparente */
+    border-radius: 8px; /* Bordes redondeados */
+    z-index: -1;
+}
+
+.up-bar{
+    display: flex;
+    
+}
+.search-bar {
+    margin-left: 98px;
+    margin-top: 17px; /* Añadir margen superior de 20px */
+    padding: 6px; /* Reducir el padding para que la barra sea más delgada */
+    background-color: #f0f0f0; /* Color similar al fondo de Pinterest */
+    border-radius: 10px; /* Bordes más redondeados */
+    width: 80%; /* Ajustar el ancho para que sea similar al de Pinterest */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil para darle un poco de elevación */
+}
+.search-bar input {
+    width: 99%;
+    padding: 8px; /* Reducir el padding del input para hacerlo más pequeño */
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    font-size: 15px; /* Tamaño de letra más pequeño */
+    
+}
+.cuenta {
+    background-color: orange;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .container {
+    column-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.imagen{
+    border-radius: 20px;
+}
+
+
+
+
+
+
